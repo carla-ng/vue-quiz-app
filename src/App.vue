@@ -3,33 +3,33 @@
 
     const questions = ref([
         {
-            question: 'What is Vue JS?',
+            question: 'Which company created Mario?',
             answer: 0,
             options: [
-                'A front end framework',
-                'A library',
-                'An ice cream maker'
+                'Nintendo',
+                'Square Enix',
+                'Sega'
             ],
             selected: null
         },
         {
-            question: 'What is Vuex?',
+            question: 'What is the name of Mario\'s main villain?',
             answer: 2,
             options: [
-                'Vue with a x',
-                'A cheese selection',
-                'State management library'
+                'Luigi',
+                'Toad',
+                'Bowser'
             ],
             selected: null
         },
         {
-            question: 'What is Vue Router used for?',
+            question: 'What color is Peach\'s dress?',
             answer: 1,
             options: [
-                'Walking in space',
-                'A routing library for Vue JS',
-                'Burger sauce',
-                'Quizzes'
+                'Red',
+                'Pink',
+                'Yellow',
+                'Blue'
             ],
             selected: null
         }
@@ -78,7 +78,7 @@
 
     <main>
 
-        <h1>Vue Quiz</h1>
+        <h1>Super Mario Quiz</h1>
 
         <section v-if="!quizCompleted" class="quiz">
             <div class="quiz-info">
@@ -133,7 +133,7 @@
 }
 
 body {
-    background-color: #F2EAFF;
+    background-color: #e50113;
 
     #app {
         min-height: 100vh;
@@ -145,6 +145,7 @@ body {
             flex-direction: column;
 
             h1 {
+                color: #FFF;
                 margin-top: 1rem;
                 margin-bottom: 2rem;
                 text-align: center;
@@ -182,26 +183,21 @@ body {
                         margin-bottom: 1rem;
 
                         .option {
-                            background-color: #D9C9F3;
+                            background-color: #2E6EEE;
                             border-radius: 0.5rem;
+                            color: #FFF;
                             cursor: pointer;
                             display: block;
                             margin-bottom: 0.5rem;
                             padding: 1rem;
 
-                            &.correct {
-                                color: #FFF;
-                                background-color: #2CCE7D;
-                            }
-                            &.wrong {
-                                color: #FFF;
-                                background-color: #FF5A5F;
-                            }
+                            &.correct { background-color: #2CCE7D; }
+                            &.wrong { background-color: #FF5A5F; }
                             &.disabled { opacity: 0.5; }
 
                             &:last-of-type { margin-bottom: 0; }
 
-                            &:hover:not(.disabled) { background-color: #BBA1E5; }
+                            &:hover:not(.disabled):not(.correct):not(.wrong) { background-color: #6590E6; }
 
                             input { display: none; }
                         }
@@ -212,7 +208,7 @@ body {
                         border: none;
                         outline: none;
 
-                        background-color: #FF3B99;
+                        background-color: #0054FF;
                         border-radius: 0.5rem;
                         color: #FFF;
                         cursor: pointer;

@@ -30,4 +30,4 @@ https://carla-ng-vue-quiz-app.netlify.app/
 <br/>
 
 ## :clap: Acknowledgments
-[Tyler Potts](https://tylerpotts.co.uk/)
+* Project idea by [Tyler Potts](https://tylerpotts.co.uk/)

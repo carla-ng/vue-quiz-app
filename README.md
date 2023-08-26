@@ -13,6 +13,9 @@ Simple (Super Mario) quiz made with Vue and Vite.
 ## :globe_with_meridians: Demo
 https://carla-ng-vue-quiz-app.netlify.app/
 
+<br/>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a84b8ed3-36e6-430a-a607-86e1e8e3b08c/deploy-status)](https://app.netlify.com/sites/carla-ng-vue-quiz-app/deploys)
 
 <br/>
 
